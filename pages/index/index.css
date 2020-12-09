@@ -1,0 +1,97 @@
+.container
+{
+	width: 100%;
+  	min-height: 800px;
+  	height: auto;
+	padding-top: 5%;
+}
+
+.content
+{
+	width: inherit;
+	height: 800px;
+	position: relative;
+	margin: 0px;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-play-state: paused;
+}
+
+#content1
+{
+	background-color: blue;
+	animation-name: fade_in_from_right;
+}
+
+#content2
+{
+	background-color: red;
+	animation-name: fade_in_from_left;
+}
+
+#container3
+{
+
+}
+
+#content3a
+{
+	background-color: yellow;
+	width: 50%;
+	animation-name: fade_in_from_left;
+}
+
+#content3b
+{
+	background-color: orange;
+	width: 50%;
+	animation-name: fade_in_from_right;
+	float: right;
+}
+
+#container4
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#content4a
+{
+	background-color: green;
+	width: 50%;
+	animation-name: fade_in_from_left;
+}
+
+#content4b
+{
+	background-color: green;
+	width: 50%;
+	animation-name: fade_in_from_right;
+}
+
+
+@keyframes fade_in_from_right {
+  from
+  {
+  	left: 100px;
+  	opacity: 0%;
+  }
+  to
+  {
+  	left: 0px;
+  	opacity: 100%;
+  }
+}
+
+@keyframes fade_in_from_left {
+	from
+	{
+		right: 100px;
+		opacity: 0%;
+	}
+	to
+	{
+		right: 0px;
+		opacity: 100%;
+	}
+}
